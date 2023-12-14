@@ -2,8 +2,8 @@ name: eslint
 run-name: ${{ github.actor }} - eslint
 on: [push]
 jobs:
-  job-eslint:
-    name: job.name--eslint
+  job-eslint-test:
+    name: job.name--eslint--test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -12,3 +12,4 @@ jobs:
           node-version: '20.8.0'
       - run: npm install
       - run: npm run eslint
+      - run: npm run test
