@@ -1,5 +1,5 @@
-name: eslint
-run-name: ${{ github.actor }} - eslint
+name: checkCode
+run-name: ${{ github.actor }} - checkCode
 on: [push]
 jobs:
   job-eslint:
